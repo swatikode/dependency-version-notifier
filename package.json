@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@cerner/carbon-graphs": "^1.9.3",
+    "axios": "^0.19.0",
     "npx": "^10.2.0"
   },
   "files": [
@@ -49,7 +50,7 @@
   },
   "scripts": {
     "runNotifyDepVersion": "bash bin/notifyDepVersion.sh",
-    "preinstall": "npm run-script runNotifyDepVersion",
-    "readDependencies": "node ./bin/dependencyReader.js `swati' 'kode'"
+    "readDependencies": "node ./bin/dependencyReader.js `swati' 'kode'",
+    "preinstall": "npm run-script runNotifyDepVersion && npm run readDependencies"
   }
 }
