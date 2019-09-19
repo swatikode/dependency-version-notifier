@@ -1,0 +1,4 @@
+dependency-version-notifier@0.0.1 C:\Users\sk026397\Documents\Documents\Cerner Intelligence\Repositories\dependency-version-notifier
++-- @cerner/carbon-graphs@1.9.3
+`-- npx@10.2.0
+

@@ -1,0 +1,55 @@
+{
+  "name": "dependency-version-notifier",
+  "description": "Notifies about new versions pre install",
+  "version": "0.0.1",
+  "author": "Swati Kode",
+  "rules": {
+    "type-case": [
+      0,
+      "always",
+      "start-case"
+    ],
+    "type-enum": [
+      2,
+      "always",
+      [
+        "Fix",
+        "Chore",
+        "New",
+        "Docs",
+        "Breaking",
+        "Upgrade",
+        "Update",
+        "Build",
+        "Revert"
+      ]
+    ],
+    "subject-case": [
+      0,
+      "always",
+      "start-case"
+    ]
+  },
+  "dependencies": {
+    "@cerner/carbon-graphs": "^1.9.3",
+    "npx": "^10.2.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "homepage": "https://github.com/swatikode/dependency-version-notifier/",
+  "keywords": [
+    "dependency update",
+    "notify new versions in dependencies"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swatikode/dependency-version-notifier.git"
+  },
+  "scripts": {
+    "runNotifyDepVersion": "bash bin/notifyDepVersion.sh",
+    "preinstall": "npm run-script runNotifyDepVersion",
+    "readDependencies": "node ./bin/dependencyReader.js `swati' 'kode'"
+  }
+}

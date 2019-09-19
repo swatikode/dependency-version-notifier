@@ -1,0 +1,16 @@
+{
+  "name": "dependency-version-notifier",
+  "version": "0.0.1",
+  "dependencies": {
+    "@cerner/carbon-graphs": {
+      "version": "1.9.3",
+      "from": "@cerner/carbon-graphs@^1.9.3",
+      "resolved": "https://registry.npmjs.org/@cerner/carbon-graphs/-/carbon-graphs-1.9.3.tgz"
+    },
+    "npx": {
+      "version": "10.2.0",
+      "from": "npx@latest",
+      "resolved": "https://registry.npmjs.org/npx/-/npx-10.2.0.tgz"
+    }
+  }
+}

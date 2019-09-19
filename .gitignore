@@ -1,0 +1,7 @@
+# exclude
+.DS_Store
+.vscode
+node_modules
+.idea
+npm-debug.log
+*.stackdump
